@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 
-const API = axios.create({ baseURL: '' });
+const API = axios.create({ baseURL: 'https://url-shortener-backend.proudtree-37f0d902.northeurope.azurecontainerapps.io' });
 API.interceptors.request.use(config => {
   const token = localStorage.getItem('token');
   if (token) config.headers.Authorization = `Bearer ${token}`;

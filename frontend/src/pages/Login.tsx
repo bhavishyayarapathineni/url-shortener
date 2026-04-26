@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
-const API = axios.create({ baseURL: '' });
+const API = axios.create({ baseURL: 'https://url-shortener-backend.proudtree-37f0d902.northeurope.azurecontainerapps.io' });
 
 export default function Login() {
   const [isRegister, setIsRegister] = useState(false);
